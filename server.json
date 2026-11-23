@@ -1,0 +1,35 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "kz.wapi/whatsapp",
+  "title": "wapi.kz: WhatsApp attribution and API",
+  "description": "WhatsApp with ad attribution: which ad, link or site brought each chat, and did it sell",
+  "version": "0.5.1",
+  "websiteUrl": "https://wapi.kz/guides/whatsapp-ai-agent-mcp",
+  "icons": [
+    {
+      "src": "https://wapi.kz/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://wapi.kz/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Your wapi.kz API key as 'Bearer <key>'. Free sandbox key after sign-up at https://wapi.kz/register",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/wapi-kz/wapi-mcp",
+    "source": "github"
+  }
+}
