@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "wapi": {
+      "url": "https://wapi.kz/api/mcp",
+      "headers": { "Authorization": "Bearer ${env:WAPI_KEY}" }
+    }
+  }
+}
